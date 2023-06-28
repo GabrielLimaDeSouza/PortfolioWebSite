@@ -1,0 +1,32 @@
+.divFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 90px;
+}
+
+.divIcons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.icon{
+    color: var(--branco);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+.divCopy {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    opacity: 50%;
+    font-size: 13px;
+}
+

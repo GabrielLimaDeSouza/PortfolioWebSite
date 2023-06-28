@@ -1,0 +1,27 @@
+/*Estilos globais*/
+
+:root {
+  --preto: #010101;
+  --branco: #FCFAFA;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body{
+  padding: 60px 190px;
+  height: calc(100vh - 120px);
+  width: calc(100vw - 380px);
+}
+
+.black-body{
+  background-color: var(--preto);
+  color: #FCFAFA;
+}
+
+.white-body {
+  background-color: var(--branco);
+  color: var(preto);
+}

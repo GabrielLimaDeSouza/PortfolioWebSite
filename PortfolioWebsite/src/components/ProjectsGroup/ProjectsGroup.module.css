@@ -17,16 +17,6 @@
 }
 
 
-@media screen and (max-width: 1640px) and (max-width: 1000px) {
-    .projectGroup {
-        padding: 0px;
-    }
-
-    .projectGroupContainer {
-        gap: 40px;
-    }
-}
-
 @media screen and (max-width: 1360px) {
     .projectGroupContainer {
         gap: 20px;

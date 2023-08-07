@@ -1,30 +1,45 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
-// Estilos
-import heroStyles from './Hero.module.css'
-
-// Componentes
-import Button from '../../components/Button/Button'
-import Header from '../../components/Header/Header'
-import Footer from '../../components/Footer/Footer'
+// Páginas
+import Hero from './Hero/Hero'
+import AboutMe from './AboutMe/AboutMe'
+import Projects from './Projects/Projects'
+import Contact from './Contact/Contact'
+import Footer from './Footer/Footer'
 
 const Home = () => {
+
+  useEffect(() => {
+        $.scrollify({
+          section: ".section",
+          sectionName: false,
+          setHeights: false,
+          scrollSpeed: 1100,
+          scrollbars: false,
+          easing: "easeOutExpo",
+          before: function(index, sections) {},
+          after: function(index, sections) {}
+        });
+  }, [])
+
   return (
-    <div className="body black-body">
-        <Header />
-        <div className={heroStyles.divContent}>
-            <div>
-                <h1 className={heroStyles.primaryText}>Desenvolvedor Full Stack</h1>
-            </div>
-            <div>
-                <p className={heroStyles.secondaryText}>I love design products and experiences with users in mind.</p>
-            </div>
-            <div>
-                <Button text="MEUS PROJETOS"/>
-            </div>
-        </div>
+    <>
+      <div id="hero" className='section'>
+        <Hero />
+      </div>
+      <div id="aboutMe" className='section'>
+        <AboutMe />
+      </div>
+      <div id="projects" className='section'>
+        <Projects />
+      </div>
+      <div id="contact" className='section'>
+        <Contact />
+      </div>
+      <div id="footer" className='section'>
         <Footer />
-    </div>
+      </div>
+    </>
   )
 }
 

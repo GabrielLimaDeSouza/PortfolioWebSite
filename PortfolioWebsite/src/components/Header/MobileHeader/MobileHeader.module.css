@@ -1,0 +1,101 @@
+.mobile-menu-container {
+    position: relative;
+}
+
+.divHeader {
+    display: flex;
+    justify-content: space-between;
+    height: 25px;
+}
+  
+.nameHeader {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 21px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.nameHeader a {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.nameHeader:hover {
+    transform: scale(1.1);
+}  
+  
+.nameHeader p{
+    color: var(--branco);
+}
+  
+.burger-icon {
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.burger-icon:hover {
+    transform: scale(1.2);
+}
+  
+.burger-icon span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--branco);
+    border-radius: 2px;
+}
+  
+.open span {
+    opacity: 50%;   
+}
+  
+.menu-items {
+    position: absolute;
+    top: 30px;
+    right: 1px;
+    width: 125px;
+    height: 150px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    list-style: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+.menu-items li {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    transition: background-color 0.3s; 
+    height: 30px;
+    cursor: pointer;
+}
+
+.menu-items li:hover {
+    background-color: rgba(128, 128, 128, 0.2); /* Fundo cinza transparente no hover */
+}
+  
+.menu-items a {
+    color: var(--preto);
+    font-family: 'Kanit', sans-serif; 
+    font-size: 15px;
+    text-decoration: none;
+}
+
+@media (max-width: 600px){
+    .nameHeader {
+        font-size: 18px;
+    }
+
+    .burger-icon {
+        font-size: 20px;
+    }
+}
+
+  

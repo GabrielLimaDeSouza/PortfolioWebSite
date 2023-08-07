@@ -1,0 +1,46 @@
+.projectGroup {
+    padding: 120px;
+}
+
+.projectGroupContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 1800px){
+    .projectGroup {
+        padding: 200px;
+    }
+}
+
+
+@media screen and (max-width: 1640px) and (min-widht: 1000px) {
+    .projectGroup {
+        padding: 0px;
+    }
+
+    .projectGroupContainer {
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .projectGroupContainer {
+        gap: 20px;
+    }
+
+    .projectGroup {
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .projectGroupContainer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+

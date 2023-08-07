@@ -1,0 +1,7 @@
+.divContent {
+    display: flex;
+    height: calc(100vh - 170px);
+    justify-content: flex-start;
+    align-items: center;
+}
+

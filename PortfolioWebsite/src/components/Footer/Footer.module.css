@@ -3,8 +3,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50px;
-    margin-bottom: 90px;
 }
 
 .divIcons {
@@ -28,5 +26,6 @@
     font-weight: 500;
     opacity: 50%;
     font-size: 13px;
+    text-align: center;
 }
 

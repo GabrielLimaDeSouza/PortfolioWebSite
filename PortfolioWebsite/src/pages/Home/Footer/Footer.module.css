@@ -1,0 +1,48 @@
+.divContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.divIcons {
+    display: flex;
+    gap: 10px;
+}
+
+.linha {
+    width: calc(100vw - 380px);
+    height: 0.1px;
+    background-color: var(--branco);
+}
+
+.informations {
+    margin-top: 30px;
+    width: calc(100vw - 380px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.icon{
+    color: var(--branco);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+
+@media (max-width: 700px){
+    .linha, .informations {
+        width: calc(100vw - 80px);
+    }
+}

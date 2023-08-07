@@ -1,0 +1,36 @@
+.divContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 120px);
+    gap: 90px;
+}
+
+.text {
+    font-family: 'Kanit', sans-serif; 
+    font-size: 18px;
+    text-align: justify;
+}
+
+.img {
+    width: 300px;
+    height: 300px;
+}
+
+@media (max-width: 400px){
+    .img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .divContent {
+        gap: 30px;
+    }
+}
+
+@media (max-height: 700px){
+    .text {
+        font-size: 16px;
+    }
+}

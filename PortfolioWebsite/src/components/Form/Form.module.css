@@ -1,0 +1,79 @@
+.divForm {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 60px;
+    width: 100vw;
+}
+
+.divForm textarea{
+    border-radius: 5px;
+    border: 1px solid var(--preto);
+    background-color: var(--branco);
+    width: 50%;
+    min-width: 200px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--preto);
+    padding: 25px;
+    resize: none;
+    overflow-y: hidden;
+}
+
+.inputName , .inputEmail{
+    height: 70px;
+}
+
+.inputMessage {
+    height: 200px;
+}
+
+.btnSubmit {
+    margin-top: 30px;
+    border: none;
+    background-color: var(--preto);
+    color: var(--branco);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    border-radius: 40px;
+    width: 200px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btnSubmit:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 1000px){
+    .divForm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 600px; 
+        margin: 0 auto; 
+    }
+}
+
+@media (max-height:  700px){
+    .inputName , .inputEmail{
+        height: 50px;
+    }
+    
+    .inputMessage {
+        height: 100px;
+    }
+
+    .divForm textarea{
+        padding: 15px;
+    }
+
+    .btnSubmit {
+        font-size: 13px;
+        width: 180px;
+    }
+    
+}

@@ -1,0 +1,136 @@
+.projectCard {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.projectCard:hover {
+    transform: scale(1.1);
+}
+
+.projectImg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cardOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: 1s ease;
+    background-color: #171515;
+    padding: 15px 15px;
+    border-radius: 10px;
+}
+
+.projectCard:hover .cardOverlay{
+    opacity: 1;
+    transition: 1s ease;
+}
+
+.projectCard:hover .projectImg {
+    opacity: 0;
+}
+
+.projectTitle {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    color: var(--branco);
+    margin-bottom: 15px;
+}
+
+.projectDescription {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--branco); 
+    opacity: 50%;
+    margin-bottom: 30px;
+}
+
+.languages {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-top: 1px solid var(--branco);
+    padding-top: 15px;
+    max-height: 80px;
+    overflow: hidden;
+}
+
+.language{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 10px;
+    background-color: var(--preto);
+    border-radius: 10px;
+    text-align: center;
+    width: 80px;
+    height: 20px;
+}
+
+@media screen and (max-height: 1000px){
+    .projectCard {
+        width: 250px;
+        height: 150px;
+    }
+
+    .projectTitle {
+        font-size: 11px;
+    }
+
+    .projectDescription {
+        font-size: 11px;
+    }
+    
+    .languages {
+        padding-top: 5px;
+    }
+
+    .projectDescription, .projectTitle {
+        margin-bottom: 10px;
+    }
+
+    .language {
+        width: 60px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .projectCard {
+        height: 100px;
+        width: 200px;
+    }
+
+    .projectTitle {
+        font-size: 11px;
+    }
+
+    .projectDescription {
+        font-size: 11px;
+    }
+
+    .languages {
+        display: none;
+    }
+
+    .language{
+        display: none;
+    }
+}
+

@@ -17,7 +17,7 @@
 }
 
 
-@media screen and (max-width: 1640px) and (min-widht: 1000px) {
+@media screen and (max-width: 1640px) and (max-width: 1000px) {
     .projectGroup {
         padding: 0px;
     }

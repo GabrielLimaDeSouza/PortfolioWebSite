@@ -94,14 +94,3 @@ a {
 
 }
 
-@media (max-height: 1000px){
-  .body{
-    padding: 60px 160px;
-    height: 100vh;
-    width: 100vw;
-  }
-  
-  .title {
-    font-size: 36px;
-  }
-}

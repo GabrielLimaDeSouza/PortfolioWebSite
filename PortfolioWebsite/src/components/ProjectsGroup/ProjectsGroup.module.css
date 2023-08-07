@@ -1,29 +1,14 @@
-.projectGroup {
-    padding: 120px;
-}
 
 .projectGroupContainer {
     display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.firstLine, .secondLine {
+    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    gap: 60px;
-    justify-content: space-between;
-}
-
-@media screen and (min-width: 1800px){
-    .projectGroup {
-        padding: 200px;
-    }
-}
-
-@media screen and (max-width: 1360px) {
-    .projectGroupContainer {
-        gap: 20px;
-    }
-
-    .projectGroup {
-        padding: 0px;
-    }
+    gap: 30px;
 }
 
 @media screen and (max-width: 1000px) {

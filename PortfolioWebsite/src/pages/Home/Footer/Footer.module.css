@@ -46,9 +46,3 @@
         width: calc(100vw - 80px);
     }
 }
-
-@media (max-height: 1000px){
-    .linha, .informations {
-        width: calc(100vw - 320px);
-    }
-}

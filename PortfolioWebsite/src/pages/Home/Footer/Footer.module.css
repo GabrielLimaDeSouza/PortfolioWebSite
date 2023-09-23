@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: calc(100vh - 60px);
 }
 
 .divIcons {
@@ -44,5 +44,9 @@
 @media (max-width: 700px){
     .linha, .informations {
         width: calc(100vw - 80px);
+    }
+
+    .divContent {
+        height: calc(100vh - 40px);
     }
 }

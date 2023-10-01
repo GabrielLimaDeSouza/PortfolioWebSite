@@ -4,7 +4,7 @@ import React from 'react'
 import aboutMeStyles from './AboutMeDesktop.module.css'
 
 // Img
-import aboutMeFrameImg from '../../../../assets/imgs/FotoComQuadro.png'
+import aboutMeImg from '../../../../assets/imgs/Foto.jpg'
 
 const AboutMe = () => {
   return (
@@ -16,8 +16,11 @@ const AboutMe = () => {
               <div className={aboutMeStyles.divText}>
                   <p className={aboutMeStyles.text}>Meu nome é Gabriel Lima de Souza e eu moro em Belo Horizonte/MG. Sou estudante de Engenharia de Software na PUC Minas e atualmente estou no quinto período. Sou um Desenvolvedor Full Stack e minha linguagem preferida é o Javascript.</p>
               </div>
-              <div className={aboutMeStyles.divImg}>
-                  <img className={aboutMeStyles.img} src={aboutMeFrameImg} alt="" />
+              <div className={aboutMeStyles.divPhoto}>
+                <div className={aboutMeStyles.divImg}>
+                  <img className={aboutMeStyles.img} src={aboutMeImg} alt="" />
+                </div>
+                <div className={aboutMeStyles.square}></div>
               </div>
           </div>
     </div>

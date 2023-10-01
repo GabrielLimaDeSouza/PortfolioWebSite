@@ -4,7 +4,7 @@ import React from 'react'
 import aboutMeStyles from './AboutMeMobile.module.css'
 
 // Img
-import aboutMeImg from '../../../../assets/imgs/FotoSemQuadro.jpg'
+import aboutMeImg from '../../../../assets/imgs/Foto.jpg'
 
 const AboutMe = () => {
   return (

@@ -110,7 +110,7 @@
     }
 
     .divContent {
-        height: calc(100vh - 120px);
+        height: calc(100vh - 135px);
     }
     
     .projectTitle, .projectDescription {
@@ -125,6 +125,7 @@
 @media (max-height: 1000px){
     .divContent {
         padding-top: 20px;
+        height: calc(100vh - 180px);
     }
 
     .divImg {

@@ -18,7 +18,7 @@ const DesktopProjects = () => {
                 <div className={projectsStyles.project}>
                     <div className={projectsStyles.text}>
                         <div className={projectsStyles.projectTitle}>
-                            <p>ProtOn</p>
+                            <a href="https://github.com/GabrielLimaDeSouza/ProtOn" target="_blank"><p>ProtOn</p></a>
                         </div>
                         <div className={projectsStyles.projectDescription}>
                             <p>Sistema de recomendação de protolos odontológicos.</p>
@@ -33,13 +33,13 @@ const DesktopProjects = () => {
                         </div>
                     </div>
                     <div className={projectsStyles.divImg}>
-                        <img className={projectsStyles.img} src={protonImg} alt="ProtOn" />
+                        <a href="https://github.com/GabrielLimaDeSouza/ProtOn" target="_blank"><img className={projectsStyles.img} src={protonImg} alt="ProtOn" /></a>
                     </div>
                 </div>
                 <div className={projectsStyles.project}>
                     <div className={projectsStyles.text}>
                         <div className={projectsStyles.projectTitle}>
-                            <p>Atelier Picinin</p>
+                            <a href="https://github.com/GabrielLimaDeSouza/Atelier-Picinin" target="_blank"><p>Atelier Picinin</p></a>
                         </div>
                         <div className={projectsStyles.projectDescription}>
                             <p>Sistema de divulgação e gerenciamento do Atelier Picinin.</p>
@@ -54,13 +54,13 @@ const DesktopProjects = () => {
                         </div>
                     </div>
                     <div className={projectsStyles.divImg}>
-                        <img className={projectsStyles.img} src={atelierImg} alt="Atelier Picinin" />
+                        <a href="https://github.com/GabrielLimaDeSouza/Atelier-Picinin" target="_blank"><img className={projectsStyles.img} src={atelierImg} alt="Atelier Picinin" /></a>
                     </div>
                 </div>
                 <div className={projectsStyles.project}>
                     <div className={projectsStyles.text}>
                         <div className={projectsStyles.projectTitle}>
-                            <p>Mone.das</p>
+                            <a href="https://github.com/GabrielLimaDeSouza/Mone.das" target="_blank"><p>Mone.das</p></a>
                         </div>
                         <div className={projectsStyles.projectDescription}>
                             <p>Sistema de moedas estudantil para faculdades e escolas.</p>
@@ -75,7 +75,7 @@ const DesktopProjects = () => {
                         </div>
                     </div>
                     <div className={projectsStyles.divImg}>
-                        <img className={projectsStyles.img} src={monedasImg} alt="Atelier Picinin" />
+                        <a href="https://github.com/GabrielLimaDeSouza/Mone.das" target="_blank"><img className={projectsStyles.img} src={monedasImg} alt="Mone.das" /></a>
                     </div>
                 </div>
             </div>

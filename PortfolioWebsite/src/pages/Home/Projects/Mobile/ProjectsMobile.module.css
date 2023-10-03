@@ -24,6 +24,7 @@
     font-family: 'Raleway', sans-serif; 
     font-size: 21px;
     font-weight: 800;
+    cursor: pointer;
 }
 
 .projectDescription {

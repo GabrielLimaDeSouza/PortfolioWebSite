@@ -1,0 +1,7 @@
+.container {
+    min-height: 100svh;
+    width: 100vw;
+    padding: 90px 190px;
+    background-color: var(--branco);
+    color: var(--preto);
+}

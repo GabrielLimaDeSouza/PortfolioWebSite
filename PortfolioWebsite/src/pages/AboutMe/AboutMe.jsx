@@ -11,7 +11,7 @@ import AditionalPageLayout from '../../components/AditionalPageLayout/AditionalP
 
 const AboutMe = () => {
   return (
-    <AditionalPageLayout>
+    <AditionalPageLayout href="/#2">
       <div className={styles.container}>
         <div className={styles.title}>
           <h1>SOBRE MIM</h1>

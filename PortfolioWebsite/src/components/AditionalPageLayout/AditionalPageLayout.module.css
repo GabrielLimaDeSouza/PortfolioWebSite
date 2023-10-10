@@ -1,7 +1,32 @@
+.outerDiv {
+    color: var(--branco);
+    font-size: 21px;
+    background-color: var(--branco);
+    position: relative;
+}
+
+.divArrowIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--preto);
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 30px;
+    top: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.divArrowIcon:hover {
+    transform: scale(1.1);
+}
+
 .container {
     min-height: 100svh;
     width: 100vw;
     padding: 90px 190px;
-    background-color: var(--branco);
     color: var(--preto);
 }

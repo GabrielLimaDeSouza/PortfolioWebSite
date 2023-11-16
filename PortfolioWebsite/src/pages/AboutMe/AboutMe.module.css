@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     gap: 60px;
+    width: 100%;
 }
 
 .title h1 {
@@ -25,7 +26,7 @@
 }
 
 .informationText p {
-    font-family: 'Kanit';
+    font-family: 'Kanit', sans-serif; 
     font-weight: 300;
     font-size: 21px;
     text-align: justify;
@@ -45,8 +46,10 @@
 }
 
 .experienceContainer {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 30px;
 }
 
 .experienceContainer h3 {
@@ -76,5 +79,17 @@
     .informationText {
         width: 100%;
         order: 2;
+    }
+
+    .informationText p {
+        font-family: 'Kanit', sans-serif; 
+        font-weight: 300;
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .informationImg img{
+        width: 200px;
+        height: 200px;
     }
 }

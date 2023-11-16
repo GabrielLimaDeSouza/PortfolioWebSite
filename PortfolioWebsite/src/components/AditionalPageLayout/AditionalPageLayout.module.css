@@ -26,7 +26,13 @@
 
 .container {
     min-height: 100svh;
-    width: 100vw;
+    max-width: 100vw;
     padding: 90px 190px;
     color: var(--preto);
+}
+
+@media screen and (max-width: 1000px){
+    .container {
+        padding: 60px;
+    }
 }

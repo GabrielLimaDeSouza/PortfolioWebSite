@@ -1,20 +1,40 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 // Styles 
 import styles from './AboutMe.module.css'
 
 // Imgs
 import aboutMeImg from '../../assets/imgs/Foto.jpg'
+import hotmartImg from '../../assets/imgs/companies/hotmart.png'
 
 // Components
-import AditionalPageLayout from '../../components/AditionalPageLayout/AditionalPageLayout'
+import Layout from '../../components/AditionalPageLayout/AditionalPageLayout'
+import ExperienceCard from '../../components/ExperienceCard/ExperienceCard'
 
 const AboutMe = () => {
+
+  useEffect(() => {
+    $.scrollify.destroy();
+
+    return () => {
+      $.scrollify({
+        section: ".section",
+        sectionName: false,
+        setHeights: false,
+        scrollSpeed: 1100,
+        scrollbars: false,
+        easing: "easeOutExpo",
+        before: function(index, sections) {},
+        after: function(index, sections) {}
+      });
+    };
+  }, []);
+
   return (
-    <AditionalPageLayout href="/#2">
+    <Layout href="/#2">
       <div className={styles.container}>
         <div className={styles.title}>
-          <h1>SOBRE MIM</h1>
+            <h1>SOBRE MIM</h1>
         </div>
         <div className={styles.informationContainer}>
           <div className={styles.informationText}>
@@ -30,9 +50,10 @@ const AboutMe = () => {
         </div>
         <div className={styles.experienceContainer}>
           <h3>EXPERIÊNCIAS</h3>
+          <ExperienceCard title="Hotmart" img={hotmartImg} post="Estagiário de Desenvolvimento Frontend" time="10/2023 - Atualmente" />
         </div>
       </div>
-      </AditionalPageLayout> 
+      </Layout> 
   )
 }
 

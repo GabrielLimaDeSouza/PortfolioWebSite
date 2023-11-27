@@ -4,17 +4,13 @@ import { Link } from 'react-router-dom'
 // Styles
 import styles from './AditionalPageLayout.module.css'
 
-// Icons
-import {AiOutlineArrowLeft} from 'react-icons/ai'
+// Components
+import AditionalPageHeader from '../Header/AditionalPageHeader/AditionalPageHeader'
 
 const AditionalPageLayout = ({children, href}) => {
   return (
     <div className={styles.outerDiv}>
-      <Link to={href}>
-        <div className={styles.divArrowIcon}>
-          <AiOutlineArrowLeft />
-        </div>
-      </Link>
+      <AditionalPageHeader href={href}/>
       <div className={styles.container}>
         {children}
       </div>

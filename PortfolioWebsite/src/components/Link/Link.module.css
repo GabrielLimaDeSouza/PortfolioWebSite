@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
+    padding-bottom: 2px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    cursor: pointer;
+    border-bottom: 1.5px solid;
+}
+
+.black {
+    color: var(--preto);
+    border-color: var(--black);
+}
+
+.white {
+    color: var(--white);
+    border-color: var(--white);
+}

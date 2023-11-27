@@ -6,6 +6,9 @@ import aboutMeStyles from './AboutMeDesktop.module.css'
 // Img
 import aboutMeImg from '../../../../assets/imgs/Foto.jpg'
 
+// Componentes
+import Link from '../../../../components/Link/Link'
+
 const AboutMe = () => {
   return (
     <div className="body white-body" id="aboutMe">
@@ -23,6 +26,7 @@ const AboutMe = () => {
                 <div className={aboutMeStyles.square}></div>
               </div>
           </div>
+          <Link href="/aboutme" title="Mais sobre mim" color="black" />
     </div>
   )
 }
